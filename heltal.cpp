@@ -6,6 +6,7 @@ class Heltal{
 		Heltal(int);
 		int get();
 		void set(int);
+		void fib(int);
 	private:
 		int val;
 	};
