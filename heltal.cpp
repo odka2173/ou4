@@ -36,10 +36,7 @@ int Heltal::fib(){
     }
     else
     {
-	val = val-1;
-	a = fib();
-	val = val-1;
-        return a + fib();
+        return fib(-1) + fib(-2);
     }
 }
 	
