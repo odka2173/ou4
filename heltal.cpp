@@ -42,7 +42,7 @@ int Heltal::fib(){
 	a = fib();
 	b = val;
 	val = b-1;
-	b = fib()    
+	b = fib();    
         return a + b;
     }
 }
