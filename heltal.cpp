@@ -6,7 +6,7 @@ class Heltal{
 		Heltal(int);
 		int get();
 		void set(int);
-		void fib(int);
+		int fib(int);
 	private:
 		int val;
 	};
@@ -43,7 +43,7 @@ extern "C"{
 	Heltal* Heltal_new(int n) {return new Heltal(n);}
 	int Heltal_get(Heltal* heltal) {return heltal->get();}
 	void Heltal_set(Heltal* heltal, int n) {heltal->set(n);}
-	void Heltal_fib(Heltal* heltal, int n) {return heltal->fib(n);}
+	int Heltal_fib(Heltal* heltal, int n) {return heltal->fib(n);}
 	void Heltal_delete(Heltal* heltal){
 		if (heltal){
 			delete heltal;
