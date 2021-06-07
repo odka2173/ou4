@@ -9,6 +9,7 @@ class Heltal{
 		int fib();
 	private:
 		int val;
+		int a;
 	};
  
 Heltal::Heltal(int n){
