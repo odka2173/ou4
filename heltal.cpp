@@ -8,6 +8,7 @@ class Heltal{
 		void set(int);
 		int fib();
 		int a;
+		int b;
 	private:
 		int val;
 		
@@ -36,7 +37,13 @@ int Heltal::fib(){
     }
     else
     {
-        return fib(-1) + fib(-2);
+	a = val;
+	val = a-1;
+	a = fib();
+	b = val;
+	val = b-1;
+	b = fib()    
+        return a + b;
     }
 }
 	
